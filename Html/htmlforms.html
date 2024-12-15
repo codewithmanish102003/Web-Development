@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html forms</title>
+    <style>
+        .container {
+            margin-right: 400px;
+            margin-left: 400px;
+        }
+    </style>
+</head>
+
+<body style="background-color: #649595;">
+    <div class="container">
+        <form action="backend.php" method="post" target="_blank" enctype="multipart/form-data" accept-charset="UTF-8"
+            style="text-align:center;" style="width: 50">
+            <fieldset>
+                <legend>Personolia :</legend>
+                <h2>Html Regestration Form</h2>
+                <div>
+                    <label>FirstName :</label>
+                    <input type="text" name="FirstName" placeholder="FirstName" maxlength="10">
+                    <label>LastName :</label>
+                    <input type="text" name="LastName" placeholder="LastName" maxlength="10" required>
+                </div>
+                <br>
+                <div>
+                    <label>Email :</label>
+                    <input type="email" name="myemail" placeholder="abc@gmail.com" maxlength="30" required>
+                </div>
+                <br>
+                <div>
+                    <label>Password :</label>
+                    <input type="password" nmae="mypassword" placeholder="........" maxlength="8" pattern="[a-zA-Z0-9]"
+                        required>
+                </div>
+                <br>
+                <div>
+                    <label>Date :</label>
+                    <input type="date" name="today" min="1992-12-31" max="2030-12-31">
+                    <label>Time : </label>
+                    <input type="time" name="localtime">
+                </div>
+                <br>
+                <div>
+                    <label>Marksheet : </label>
+                    <input type="file" name="mymarksheet" multiple required>
+                </div>
+                <br>
+                <div>
+                    <label>District :</label>
+                    <select name="mydistrict">
+                        <option value="Jaipur">Jaipur</option>
+                        <option value="Jodhpur">Jodhpur</option>
+                        <option value="Ajmer">Ajmer</option>
+                        <option value="Kota">Kota</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label>Hobbies :</label>
+                    <input type="checkbox" value="Cricket" name="myhobby" checked>Cricket
+                    <input type="checkbox" value="Football" name="myhobby">Football
+                    <input type="checkbox" value="Badminton" name="myhobby">Badminton
+                </div>
+                <br>
+                <div>
+                    <label>Gender :</label>
+                    <input type="radio" value="male" name="mygender">Male
+                    <input type="radio" value="female" name="mygender">Female
+                </div>
+                <br>
+                <div>
+                    <label>Description : </label>
+                    <textarea name="mydescription" cols="30" rows="10" disabled
+                        readonly>All the feilds are necessary to feel.</textarea>
+                </div>
+                <br>
+                <div>
+                    <label>numbr of copies :</label>
+                    <input type="number" max="10" min="1">
+                </div>
+                <br>
+                <div>
+                    <button type="reset" value="reset">Reset</button>
+                    <input type="submit" value="submit">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Animations</title>
+  <style>
+    /* Keyframe Animation */
+    @keyframes move {
+      0% { transform: translateX(0); }
+      50% { transform: translateX(200px); }
+      100% { transform: translateX(0); }
+    }
+
+    /* Transition Animation */
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: #3498db;
+      transition: background-color 0.5s ease-in-out;
+    }
+
+    .box:hover {
+      background-color: #e74c3c;
+    }
+
+    /* Custom Animation */
+    @keyframes colorChange {
+      from{
+        background-color: aqua;
+      }
+      to{
+        background-color: black;
+      }
+        }
+
+    .custom-box {
+      width: 100px;
+      height: 100px;
+      margin-top: 20px;
+      animation: colorChange 2s infinite;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+
+  <div class="custom-box"></div>
+
+  <div style="margin-top: 20px;">
+    <p><strong>Explanation:</strong></p>
+    <ul>
+      <li><strong>Keyframe Animation:</strong> Moves an element horizontally using the `translateX` property.</li>
+      <li><strong>Transition Animation:</strong> Changes background color smoothly on hover.</li>
+      <li><strong>Custom Animation:</strong> Custom keyframe animation that changes background color continuously.</li>
+    </ul>
+  </div>
+</body>
+</html>

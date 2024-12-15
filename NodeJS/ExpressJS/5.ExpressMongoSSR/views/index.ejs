@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+    <div class="w-full h-full bg-zinc-900 p-10 text-white">
+        <h1 class="text-3xl tracking-tighter mb-3">Create User</h1>
+        <form action="/create" method="post">
+            <input type="text" name="name" class="px-5 py-2 border-2 border-zinc-800 outline-none bg-transparent" placeholder="Type your name">
+            <input type="text" name="email" class="px-5 py-2 border-2 border-zinc-800 outline-none bg-transparent" placeholder="Type your email">
+            <input type="text" name="image" class="px-5 py-2 border-2 border-zinc-800 outline-none bg-transparent" placeholder="add image url">
+            <input type="submit" class="bg-blue-600 px-5 py-2 rounded-lg ml-3" name="Create User" id="">
+        </form>
+        <div class="mb-10 text-blue-500">
+            <a href="/read">See The Users Profile</a>
+        </div>
+        
+    </div>
+</body>
+</html>

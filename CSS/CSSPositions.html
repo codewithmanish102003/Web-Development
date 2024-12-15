@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positions</title>
+    <Style>
+        .container {
+            border: 2px solid red;
+            background-color: bisque;
+            height: 4000px;
+        }
+
+        .box {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            margin: 4px;
+        }
+
+        #box3 {
+            /* By default position of an element hence no change will be occured */ 
+            /* position: static; */
+
+            /*  position:relative; is position of element to its normal position*/
+            /* position: relative;
+            top:34px;
+            left:34px; */
+
+            /* relative to its parent position */
+            /* position: absolute;
+            left: 34px;
+            top: 34px; */
+
+            /* An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element. */
+            position: fixed;
+            right: 4px;
+
+
+            /* An element with position: sticky; is positioned based on the user's scroll position. */
+            /* position: sticky;
+            top: 4px; */
+        }
+    </Style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>

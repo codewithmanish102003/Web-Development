@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Ids And Class</title>
+    <style>
+        /* Html id attribute */
+    #myid{
+        background-color:powderblue;
+        color:black;
+        padding:40px;
+        text-align: center;
+        border: 2px dotted black;
+    }
+    #body{
+        background-color: powderblue;
+    }
+    /* Html Class attribute */
+    .city{
+        background-color: tomato;
+        color: red;
+        padding: 10px;
+    }
+    .main{
+        text-align: center;
+        border:2px solid blue;
+    }
+    </style>
+</head>
+<body id="body">
+    <!-- Html ID attribute used here -->
+    <h3 id="myid">Hello World!</h3>
+    <!-- Html class attribute here -->
+    <p class="city">Html class attribute used here.</p>
+    <!-- Multple elements can share the same class  -->
+    <h3 class="city">Element First</h3>
+    <h3 class="city">Element Second</h3>
+    <!-- A single element can have more  -->
+    <h3 class="city main">Two Classes Used Together.</h3>
+</body>
+</html>

@@ -1,0 +1,31 @@
+/* Set the background color of the body to light gray */
+body {
+    background-color: #f2f2f2;
+  }
+  
+  /* Style the h1 heading with a blue color and a bottom border */
+  h1 {
+    color: #0066cc;
+    border-bottom: 2px solid #0066cc;
+  }
+  
+  /* Style the paragraphs with a margin of 10 pixels on all sides */
+  p {
+    margin: 10px;
+  }
+  
+  /* Style the unordered list with a margin of 0 pixels on the top and bottom, and 20 pixels on the left */
+  ul {
+    margin: 0 0 0 20px;
+  }
+  
+  /* Style the list items with a bullet style of a circle */
+  li {
+    list-style-type: circle;
+  }
+  
+  /* Style the links with a blue color and an underline */
+  a {
+    color: #0066cc;
+    text-decoration: underline;
+  }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Masking</title>
+    <style>
+        .mask1 {
+
+            /* mask-image: linear-gradient(black, transparent); */
+            mask-image: radial-gradient(circle, black 40%, rgba(0, 0, 0, 0.5) 50%);
+            mask-repeat: no-repeat;
+        }
+
+
+        .mask1 img {
+            object-fit: cover;
+            width: 95vw;
+            height: 95vh;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>An image with a mask layer image:</h3>
+    <div class="mask1"> 
+        <img src="download.jpg">
+    </div>
+
+</body>
+
+</html>

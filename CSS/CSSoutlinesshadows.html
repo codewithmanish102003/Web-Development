@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS shadows and outlines </title>
+    <style>
+        .box {
+            border: 2px double rgb(202, 18, 18);
+            outline: 5px solid blue;
+            outline-offset: 15px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 5px 5px 5px 5px rgb(0, 255, 0);
+        }
+
+        h1 {
+            text-shadow: -7px 5px 8px rgb(64 63 157);
+        }
+
+        div.card {
+            width: 250px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+        }
+
+        div.polaroid {
+            width: 250px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+        }
+
+        div.header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            font-size: 40px;
+        }
+
+        div.container {
+            padding: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>I am A box.</h1>
+    </div>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque adipisci laudantium reiciendis consectetur, vitae
+        possimus nihil molestiae ut impedit, exercitationem maxime. Modi architecto fugit magnam magni qui atque fuga
+        laboriosam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora cumque facilis consequuntur, unde
+        numquam voluptates consectetur odio similique nesciunt earum odit harum? Ratione, aspernatur dignissimos eaque
+        voluptatem repellendus dolor quae rem explicabo consequuntur tenetur harum delectus sunt distinctio error ipsum
+        fugit sint nihil. Magni fugit ullam minus earum, omnis rem deleniti nesciunt sunt in ab eveniet fuga nulla hic.
+        Ad illum incidunt quam, distinctio ratione neque fuga molestias ipsum consequuntur molestiae velit repellendus
+        sunt doloribus maxime odit corrupti illo labore numquam laudantium? Quia animi aliquam hic aliquid quam nostrum
+        accusantium deserunt, quae repellat alias optio quibusdam omnis consectetur rem libero.
+    </h1>
+
+    <!-- creating cards with box shadow -->
+    <div class="card">
+        <div class="header">
+            <h1>1</h1>
+        </div>
+        <div class="container">
+            <p>jannuary-1-2024</p>
+        </div>
+    </div>
+<br><br>
+
+<!-- polarised images with box shadow property -->
+    <div class="polaroid">
+        <img src="astronaut.jpg" alt="astronaut" style="width:100%">
+        <div class="container">
+          <p>Astronaut</p>
+        </div>
+      </div>
+      
+
+</body>
+
+</html>

@@ -1,0 +1,2 @@
+MongoDb is No Sql database
+It is used to store unstructured data

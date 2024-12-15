@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS float and clear</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            border: 2px solid black;
+            width: 900px;
+            margin: auto;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+        .item{
+            border:2px purple solid;
+            padding: 34px;
+            margin: 20px;
+        }
+        #fruits{
+            float:left;
+            width: 45%;
+        }
+        #computer{
+            float:left;
+            width: 45%;
+        }
+        #stationary{
+            /* float:left; */
+            width:95%;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p class="fruitspara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque beatae, mollitia
+                maxime laborum, odit magnam molestiae fugit aliquid sed officia sapiente, vero quaerat amet molestias
+                deserunt officiis fuga. Eum inventore nisi odio debitis vel sequi natus, dignissimos officiis similique
+                doloremque error culpa voluptate. Sapiente, quam sequi aperiam dicta doloremque exercitationem
+                dignissimos nemo odit itaque nam saepe modi impedit earum enim voluptas voluptates deleniti autem.</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p class="computer">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores architecto hic assumenda blanditiis
+                atque. Quos rem similique numquam, soluta quam minima praesentium ad voluptatem tempora quae deserunt
+                repudiandae quis aliquid ducimus tempore animi quaerat ipsum? Et deserunt excepturi iure deleniti eaque
+                quisquam sed eveniet delectus non repellendus. In vero corporis cupiditate libero velit quia quibusdam
+                quam nam deserunt nesciunt sint adipisci, tenetur facilis fugiat.
+            </p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Fruits</h3>
+            <p class="stationarypara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos delectus iusto
+                voluptate numquam in, perspiciatis eos culpa modi corrupti ad enim nesciunt impedit hic voluptatibus
+                possimus? Delectus hic porro ducimus non nesciunt voluptatum excepturi totam odit fuga vero, quis
+                obcaecati! Ab fugit ducimus, autem facere magni quibusdam distinctio corporis fugiat optio doloribus
+                eaque harum inventore, ipsum voluptate iusto nobis aliquid cupiditate nulla! Corporis, nulla?</p>
+        </div>
+    </div>
+</body>
+
+</html>

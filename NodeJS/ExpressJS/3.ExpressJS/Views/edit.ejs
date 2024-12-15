@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>makeTasks</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="main w-full min-h-screen bg-zinc-900 p-10 text-white">
+        <h1 class="text-4xl">Edit The Filename</h1>
+        <form action="/edit" method="post">
+            <input type="text" class="block lg:w-1/4 sm:w-full rounded-md outline-none px-5 py-2 bg-zinc-800 mt-2"
+                placeholder="Previous Name" name="previous" value="<%= filename  %>">
+            <input type="text" class="block lg:w-1/4 sm:w-full rounded-md outline-none px-5 py-2 bg-zinc-800 mt-2"
+                placeholder="edit your filename..." name="new">
+            <input type="submit" value="Update Name"
+                class="mt-2 rounded-md bg-yellow-800 px-5 py-2 hover:bg-sky-500">
+        </form>
+      <a class="text-blue-500 inline-block mb-3" href="/">Go Back To Home</a>
+    </div>
+
+</body>
+
+</html>

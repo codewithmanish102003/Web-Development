@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display:none; , Visibility and Z-index Property</title>
+    <style>
+        #box1{
+            background-color: red;
+            border:2px solid black;
+            width: 100px;
+            height: 100px;
+        }
+        #box2{
+            background-color: rgb(11 10 223);
+            border:2px solid rgb(37, 167, 14);
+            width: 100px;
+            height: 100px;
+            position: relative;
+            bottom: 43px;
+            z-index: -44;
+            /* z-index property only works with position sticky fixed relative and absolute */
+        }
+        #box3{
+            background-color: rgba(86, 30, 198, 0.402);
+            border:2px solid rgb(228, 10, 112);
+            width: 100px;
+            height: 100px;
+            /* visibility: hidden; */
+            /* this property hide the element but not the */
+            /* display: none; */
+            /* this property will hide both elmemt and its space */
+            position: relative;
+            top: 44px;
+            z-index: 44;
+        }
+        #box4{
+            background-color: rgba(165, 232, 40, 0.402);
+            border:2px solid #f4ed10;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Visibility Hidden And Z-index property</h1>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

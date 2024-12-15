@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styling Tables</title>
+    <style>
+        table,
+        th,
+        tr,
+        td {
+            border: 2px solid black;
+            border-bottom: 2px solid black;
+            color: blue;
+            background-color: powderblue;
+            padding: 4px;
+            margin: 5px;
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            height: 50%;
+            text-align: center;
+        }
+        tr :nth-child(odd){
+            background-color: rgb(26, 27, 27);
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Contact</th>
+            <th>Course</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Manish</td>
+                <td>9649527632</td>
+                <td>BCA</td>
+            </tr>
+            <tr>
+                <td>Shubham</td>
+                <td>Unknown</td>
+                <td>BCA</td>
+            </tr>
+            <tr>
+                <td>Naveen</td>
+                <td>Unknown</td>
+                <td>BCA</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+.red{
+    color:red;
+    background-color: aqua;
+    font-weight: bolder;
+}
+
+.yellow{
+    color: yellow;
+    background-color: aqua;
+    font-style: italic;
+    font-weight: bolder;
+}

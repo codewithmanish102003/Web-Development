@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css selectors</title>
+    <style>
+        /* element selector */
+        p {
+            color: red;
+        }
+
+        /* id selector */
+        #bg {
+            background-color: #80f7f7;
+        }
+
+        /* class selector */
+        .text {
+            color: #951ee5;
+        }
+
+        /* Group Selectrs */
+        h2,h3{
+            color: yellow;
+            border: 2px solid black;
+             
+        }  
+
+        /* child selector where n = any no of row and column */
+        /* used for a direct child */
+        /* div > p{
+            background-color:green;
+        } */
+
+        /* desendent selector */
+        div p{
+            background-color: azure;
+        }
+
+        /* Pseudo Selector */
+
+     </style>
+     <!-- <style>
+        /* universal Selector */
+        *{
+            text-align: center;
+            color: #000;
+        }
+     </style> -->
+</head>
+<!-- Id selector used in body -->
+
+<body id="bg">
+    <h1 class="text">CSS selectors</h1>
+    <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus labore consequuntur voluptatibus amet sequi reiciendis ab ipsam ad architecto. Impedit fugiat sint voluptate velit voluptatem magnam corporis rem aliquid, ipsam nostrum temporibus voluptas nam nesciunt!</p></div>
+    <p>This is element selector.</p>
+    <h2>Grouping Selectors used here.</h2>
+    <h2>Grouping selectors used here.</h2>
+</body>
+
+</html>

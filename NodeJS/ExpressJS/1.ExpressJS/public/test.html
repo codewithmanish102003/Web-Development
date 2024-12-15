@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test API</title>
+</head>
+<body>
+    <h1>Post request Testing</h1>
+    <script>
+       async function testPost(){
+        let res=await fetch("/",{method:"POST"})
+        let data=await res.text()
+        document.write(data)
+       } 
+       testPost()
+    </script>
+</body>
+</html>

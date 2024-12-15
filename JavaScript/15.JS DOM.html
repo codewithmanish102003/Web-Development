@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM</title>
+</head>
+<body>
+
+    <div>I am hidden</div>
+    <div hidden class="element">I can be hidden</div>
+    <h1>This is a heading</h1>
+    <p id="para">This is an paragraph</p>
+    <script> 
+    document.write(document.head.firstElementchild)
+    document.body.style.backgroundColor="green";
+    let heading=document.getElementsByTagName("h1")
+    heading[0].style.color="white"
+
+    document.getElementById("para").style.color="red"
+
+
+    </script>
+   
+</body>
+</html>
