@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const ownerModel = require('../models/owners_model');
 const upload = require('../config/multer_config');
 const productModel = require('../models/product_model');
 const isLoggedInUser= require('../middlewares/isLoggedInUser');
