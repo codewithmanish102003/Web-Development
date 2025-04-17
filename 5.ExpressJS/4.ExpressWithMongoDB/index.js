@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
 
 //Crud operations using Mongoose
 //create
-app.get('/create', async (req, res) => {
+app.post('/create', async (req, res) => {
     let createdUser = await userModel.create({
         name: 'Harshita',
         email: 'harshita@gmail.com',
@@ -21,13 +21,13 @@ app.get('/read', async (req, res) => {
     res.send(users)
 })
 //update
-app.get('/update', async (req, res) => {
+app.put('/update', async (req, res) => {
     let updatedUser = await userModel.updateOne({age:21},{ name: 'Harshita'},{new:true})
     res.send(updatedUser)
     })
 
 //delete
-app.get('/delete', async (req, res) => {
+app.delete('/delete', async (req, res) => {
     let deletedUser = await userModel.deleteOne({age:21})
     res.send(deletedUser)
     })
