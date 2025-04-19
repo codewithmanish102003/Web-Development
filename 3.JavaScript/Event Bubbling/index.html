@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling Example</title>
+    <style>
+        div {
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid black;
+        }
+
+        #outer {
+            background-color: #f0f0f0;
+        }
+
+        #middle {
+            background-color: #d0d0d0;
+        }
+
+        #inner {
+            background-color: #b0b0b0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Event Bubbling Example</h1>
+    <p>Click on any of the nested divs to see event bubbling in action.</p>
+
+    <div id="outer">
+        Outer Div
+        <div id="middle">
+            Middle Div
+            <div id="inner">
+                Inner Div
+            </div>
+        </div>
+    </div>
+
+    <div id="log">
+        <h3>Event Log:</h3>
+        <ul id="eventLog"></ul>
+    </div>
+
+    <script>
+        // Get references to elements
+        const outer = document.getElementById('outer');
+        const middle = document.getElementById('middle');
+        const inner = document.getElementById('inner');
+        const eventLog = document.getElementById('eventLog');
+
+        // Function to log events
+        function logEvent(eventType, elementId) {
+            const listItem = document.createElement('li');
+            listItem.textContent = `${eventType} event triggered on ${elementId}`;
+            eventLog.appendChild(listItem);
+        }
+
+        // Add event listeners to all divs
+        outer.addEventListener('click', function (event) {
+            logEvent('Click', 'outer div');
+        });
+
+        middle.addEventListener('click', function (event) {
+            logEvent('Click', 'middle div');
+        });
+
+        inner.addEventListener('click', function (event) {
+            logEvent('Click', 'inner div');
+
+            // Uncomment the line below to stop event bubbling
+            // event.stopPropagation();
+        });
+
+        // Add a button to clear the log
+        const clearButton = document.createElement('button');
+        clearButton.textContent = 'Clear Log';
+        clearButton.addEventListener('click', function () {
+            eventLog.innerHTML = '';
+            event.stopPropagation(); // Prevent this click from bubbling
+        });
+        document.body.insertBefore(clearButton, document.getElementById('log'));
+    </script>
+</body>
+
+</html>

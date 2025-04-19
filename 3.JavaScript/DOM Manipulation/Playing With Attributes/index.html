@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elements Attributes Manipulation</title>
+</head>
+<body>
+    <a href="wwww.google.com" id="demo">Go to google</a>
+    <script type="text/JavaScript">
+        const a=document.getElementById('demo')
+        const isExist=a.hasAttribute('href')
+        console.log(isExist)
+        const hrefval=a.getAttribute('href')
+        console.log(hrefval)
+        // a.setAttribute('href','www.youtube.com')
+        // a.removeAttribute('href')
+    </script>
+</body>
+</html>

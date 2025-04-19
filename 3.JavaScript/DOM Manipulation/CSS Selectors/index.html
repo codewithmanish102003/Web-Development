@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM CSS Selectors</title>
+</head>
+<body>
+    <h1>
+        Header
+    </h1>
+    <p id="demo">
+        Paragraph
+    </p>
+    <h3 id="demo">
+
+    </h3>
+    <h5 class="footer">
+        Footer
+    </h5>
+
+    <script>
+        //Targetting top level elements
+        // alert(document.documentElement.getAttribute("lang"))
+        // alert(document.head.firstElementChild.innerHTML)
+        document.body.style.backgroundColor="purple";
+
+        //getElementsByTagName
+        document.getElementsByTagName('h1')[0].style.color="white";
+
+        //getElementById
+        document.getElementById("demo").innerHTML="Hello World!"
+
+        //getElementByClassName
+        document.getElementsByClassName("footer").innerHTML="I am not Footer of this website"
+
+        //querySelectorAll
+        document.querySelectorAll('#demo')[1].innerHTML="Hello World"
+    </script>
+</body>
+</html>

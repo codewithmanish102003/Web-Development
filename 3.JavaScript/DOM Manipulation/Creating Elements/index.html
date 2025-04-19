@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Elements</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <script>
+        const element=document.createElement("p")
+        const txt=document.createTextNode("Hello World!")
+        element.append(txt)
+        document.getElementById("demo").appendChild(element)
+    </script>
+</body>
+</html>
