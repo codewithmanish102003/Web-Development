@@ -6,7 +6,7 @@ const socket = io('http://localhost:4000');
 export default function Tracker() {
   useEffect(() => {
     socket.on('locationUpdate', (data) => {
-      console.log('Updated location:', data);
+      console.log('Updated location:', data); 
     });
   }, []);
 

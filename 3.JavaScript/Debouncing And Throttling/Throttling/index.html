@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body {
+        height: 3000px; /* to allow scrolling */
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      #log {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        background: #f0f0f0;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+      }
+    </style>
+  
+</head>
+<body>
+
+    <div id="log">Scroll to see throttled output...</div>
+  
+    <script>
+      // Throttle Function
+      function throttle(func, delay) {
+        let lastCall = 0;
+        return function (...args) {
+          const now = new Date().getTime();
+          if (now - lastCall >= delay) {
+            lastCall = now;
+            func.apply(this, args);
+          }
+        };
+      }
+  
+      // Function to run on scroll
+      function handleScroll() {
+        const log = document.getElementById('log');
+        const timestamp = new Date().toLocaleTimeString();
+        log.innerHTML = `Scroll event triggered at ${timestamp}`;
+        console.log(`Scroll handled at ${timestamp}`);
+      }
+  
+      // Attach throttled function to scroll event
+      const throttledScroll = throttle(handleScroll, 1000);
+      window.addEventListener('scroll', throttledScroll);
+    </script>
+  
+  </body>
+  </html>
+  
