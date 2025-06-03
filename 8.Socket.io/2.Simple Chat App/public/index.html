@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chat App</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    #messages { list-style: none; padding: 0; }
+    #messages li { margin: 5px 0; }
+  </style>
+</head>
+<body>
+  <h2>🗨️ Real-Time Chat</h2>
+  <ul id="messages"></ul>
+  <form id="chat-form">
+    <input id="message-input" autocomplete="off" placeholder="Type your message..." />
+    <button>Send</button>
+  </form>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

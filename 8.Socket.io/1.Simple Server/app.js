@@ -1,5 +1,5 @@
 const express=require('express')
-const http = require('http');
+const http = require('http'); 
 const socketIo = require('socket.io');
 
 const app = express();
@@ -8,6 +8,7 @@ const io = socketIo(server);
 
 // Serve static files from the current directory
 app.use(express.static(__dirname));
+// console.log(__dirname)
 
 // Route handler for the root path
 app.get('/', (req, res) => {
@@ -15,7 +16,7 @@ app.get('/', (req, res) => {
 });
 
 io.on('connection', (socket) => {
-  console.log('Connected:', socket.id);
+  console.log('Client Connected:', socket.id);
   
   socket.on('message', (data) => {
     console.log('Message:', data);
