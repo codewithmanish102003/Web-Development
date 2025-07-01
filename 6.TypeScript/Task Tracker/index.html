@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Tracker</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+  <div class="bg-white p-6 rounded shadow-md w-96">
+    <h1 class="text-xl font-bold mb-4">Task Tracker</h1>
+    <input id="taskInput" type="text" class="w-full border rounded p-2 mb-2" placeholder="Enter task..." />
+    <button id="addTaskBtn" class="w-full bg-blue-500 text-white rounded p-2 mb-4">Add Task</button>
+    <ul id="taskList" class="space-y-2"></ul>
+  </div>
+  <script type="module" src="./src/main.ts"></script>
+</body>
+</html>
