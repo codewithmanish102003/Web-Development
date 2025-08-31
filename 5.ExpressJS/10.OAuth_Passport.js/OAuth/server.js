@@ -80,14 +80,13 @@ app.get('/dashboard', (req, res) => {
     }
 
     const user = req.user;
-    const profilePicture = user.photos && user.photos.length > 0 ? user.photos[0].value.replace('=s96-c', '=s400-c') : 'https://via.placeholder.com/150';
 
 
     res.send(`
         <h1>Welcome, ${user.displayName}</h1>
         <p>Email: ${user.emails[0].value}</p>
         <p>Google ID: ${user.id}</p>
-        <img src="${profilePicture}" alt="Profile Picture" width="150" height="150"/>
+        <img src="${user.picture}" alt="Profile Picture" width="150" height="150"/>
         <br><a href="/logout">Logout</a>
     `);
 });
